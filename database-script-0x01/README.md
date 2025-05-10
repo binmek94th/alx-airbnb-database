@@ -52,3 +52,19 @@ Enables user-to-user messaging.
 - Stores message content and timestamp
 
 ---
+
+## 🎯 Design Goals
+
+- ✅ **Normalized to 3NF** for consistency and flexibility
+- ✅ **Efficient indexing** on foreign keys and emails
+- ✅ **Scalable with UUIDs** for distributed environments
+- ✅ **Safe cascading deletes** to manage data lifecycle
+
+---
+
+## 🚀 Getting Started
+
+You can create the database tables using the SQL schema provided in `schema.sql`.
+
+```bash
+psql -U user -d airbnb -f schema.sql
