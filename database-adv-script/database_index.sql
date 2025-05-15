@@ -11,3 +11,11 @@ CREATE INDEX IF NOT EXISTS idx_bookings_start_date ON bookings(start_date);
 -- Properties Table
 CREATE INDEX IF NOT EXISTS idx_properties_host_id ON properties(host_id);
 CREATE INDEX IF NOT EXISTS idx_properties_location ON properties(location);
+
+
+EXPLAIN ANALYZE 
+SELECT * FROM bookings WHERE status = 'confirmed';
+
+
+EXPLAIN ANALYZE 
+SELECT * FROM bookings WHERE user_id = 2;
