@@ -26,3 +26,31 @@ The database includes the following tables:
 - `messages`
 
 Each query demonstrates the usage of different SQL JOIN types using real table relationships.
+
+
+# SQL Subqueries - Advanced Queries
+
+This file contains advanced SQL subqueries for the **alx-airbnb-database** project.
+
+## File: subqueries.sql
+
+### Queries Included
+
+1. **Non-Correlated Subquery**
+   - Finds all properties with an average review rating greater than 4.0.
+   - Utilizes an aggregate `HAVING` clause inside a subquery.
+
+2. **Correlated Subquery**
+   - Finds users who have made more than 3 bookings.
+   - Uses a subquery that references the outer query (`u.user_id`).
+
+## Schema Reference
+
+Relevant tables used:
+- `users`
+- `bookings`
+- `reviews`
+- `properties`
+
+Each query demonstrates subquery usage for data filtering and user-specific insights.
+
